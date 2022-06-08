@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">projectUAS</string>
+    <string name="text_login">LOGIN AS</string>
+    <string name="text_admin">ADMIN</string>
+    <string name="text_user">USER</string>
+
+</resources>
