@@ -31,9 +31,9 @@
                     android:layout_marginTop="24dp" android:id="@+id/textView"/>
             <EditText
                     android:inputType="textPersonName"
-                    android:layout_width="177dp"
+                    android:layout_width="291dp"
                     android:hint="email address"
-                    android:layout_height="48dp"
+                    android:layout_height="49dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     android:id="@+id/etEmail"
@@ -42,9 +42,9 @@
                     app:layout_constraintHorizontal_bias="0.497"/>
             <EditText
                     android:inputType="textPassword"
-                    android:layout_width="175dp"
+                    android:layout_width="292dp"
                     android:hint="password"
-                    android:layout_height="48dp"
+                    android:layout_height="55dp"
                     app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
                     android:id="@+id/etPassword" app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintTop_toBottomOf="@+id/etEmail" android:layout_marginTop="32dp"/>

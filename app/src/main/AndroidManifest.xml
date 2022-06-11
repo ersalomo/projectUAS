@@ -10,16 +10,24 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.ProjectUAS">
         <activity
+                android:name=".ui.admin.HomeAdmin"
+                android:label="Detail"
+                android:exported="true"/>
+
+        <activity
+                android:name=".ui.user.HomeUser"
+                android:exported="true"/>
+        <activity
                 android:name=".auth.UserRegisterActivity"
+                android:exported="true"/>
+        <activity
+                android:name=".anjing.TambahDataAnjing"
                 android:exported="true"/>
         <activity
                 android:name=".auth.LoginUserActivity"
                 android:exported="true"/>
         <activity
                 android:name=".auth.LoginAdminActivity"
-                android:exported="true"/>
-        <activity
-                android:name=".auth.ActivityLoginUser"
                 android:exported="true"/>
         <activity
                 android:name=".MainActivity"

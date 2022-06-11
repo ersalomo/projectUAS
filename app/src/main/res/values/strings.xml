@@ -3,5 +3,11 @@
     <string name="text_login">LOGIN AS</string>
     <string name="text_admin">ADMIN</string>
     <string name="text_user">USER</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home_user">HomeUser</string>
+    <string name="tambah_data">Tambah Data</string>
 
 </resources>

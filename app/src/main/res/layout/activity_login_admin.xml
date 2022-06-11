@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".auth.LoginAdminActivity">
     <androidx.cardview.widget.CardView
             android:layout_width="385dp"
             android:layout_height="377dp"
@@ -31,29 +31,32 @@
                     android:layout_marginTop="24dp" android:id="@+id/textView"/>
             <EditText
                     android:inputType="textPersonName"
-                    android:layout_width="177dp"
+                    android:layout_width="276dp"
                     android:hint="email address"
                     android:layout_height="48dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:id="@+id/etEmail"
+                    android:id="@+id/emailAdmin"
                     app:layout_constraintTop_toBottomOf="@+id/textView"
                     android:layout_marginTop="16dp"
                     app:layout_constraintHorizontal_bias="0.497"/>
             <EditText
                     android:inputType="textPassword"
-                    android:layout_width="175dp"
+                    android:layout_width="269dp"
                     android:hint="password"
                     android:layout_height="48dp"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-                    android:id="@+id/etPassword" app:layout_constraintHorizontal_bias="0.502"
-                    app:layout_constraintTop_toBottomOf="@+id/etEmail" android:layout_marginTop="32dp"/>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/passswordAdmin"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintTop_toBottomOf="@+id/emailAdmin"
+                    android:layout_marginTop="32dp"/>
             <Button android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="LOGIN"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:id="@+id/bLogin" app:layout_constraintTop_toBottomOf="@+id/etPassword"
+                    android:id="@+id/bLoginAdmin" app:layout_constraintTop_toBottomOf="@+id/passswordAdmin"
                     android:layout_marginTop="20dp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
