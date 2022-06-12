@@ -45,7 +45,6 @@ class HomeAdmin: AppCompatActivity() {
                         }
                     }
                     val adapterDog = AdapterDog(listDogs)
-
                     binding.rvDoggy.layoutManager = LinearLayoutManager(this@HomeAdmin)
                     binding.rvDoggy.setHasFixedSize(true)
                     binding.rvDoggy.adapter = adapterDog

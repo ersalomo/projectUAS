@@ -7,7 +7,6 @@
         android:layout_height="match_parent"
         tools:context=".ui.user.HomeUser">
 
-
     <TextView
             android:text="Hallo User"
             android:layout_width="114dp"
@@ -20,7 +19,9 @@
             android:text="Logout"
             android:id="@+id/bLogout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="48dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" app:layout_constraintHorizontal_bias="0.551"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.551"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
