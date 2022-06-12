@@ -10,10 +10,12 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.ProjectUAS">
         <activity
-                android:name=".ui.admin.HomeAdmin"
-                android:label="Detail"
+                android:name=".ui.detail.ActivityDetailDog"
                 android:exported="true"/>
-
+        <activity
+                android:name=".ui.admin.HomeAdmin"
+                android:exported="true"
+                android:label="Detail"/>
         <activity
                 android:name=".ui.user.HomeUser"
                 android:exported="true"/>
