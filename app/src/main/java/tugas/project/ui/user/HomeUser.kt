@@ -17,6 +17,7 @@ import tugas.project.auth.LoginUserActivity
 import tugas.project.databinding.ActivityHomeUserBinding
 import tugas.project.databinding.ActivityLoginUserBinding
 import tugas.project.model.Anjing
+import tugas.project.ui.detail.ActivityDetailDog
 
 class HomeUser:AppCompatActivity() {
     private lateinit var binding : ActivityHomeUserBinding
@@ -74,10 +75,16 @@ class HomeUser:AppCompatActivity() {
             }
         }
 
-
     }
-
     private fun showDetail(anjing: Anjing){
-        Toast.makeText(applicationContext,anjing.nama,Toast.LENGTH_LONG).show()
+                val ajg : Anjing = anjing
+                val intent = Intent(this@HomeUser,ActivityDetailDog::class.java)
+                intent.putExtra(ActivityDetailDog.EXTRA_IMAGE,ajg.image)
+                intent.putExtra(ActivityDetailDog.EXTRA_NAME,ajg.nama)
+                intent.putExtra(ActivityDetailDog.EXTRA_JENIS,ajg.jenis)
+                intent.putExtra(ActivityDetailDog.EXTRA_DESC,ajg.desc)
+                startActivity(intent)
+
+
     }
 }

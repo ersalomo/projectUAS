@@ -7,4 +7,41 @@
         android:layout_height="match_parent"
         tools:context=".ui.detail.ActivityDetailDog">
 
+    <ImageView
+            android:id="@+id/iv_dog"
+            android:layout_width="300dp"
+            android:layout_height="216dp"
+            app:srcCompat="@drawable/img"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="Dog name"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_width="172dp"
+            android:textAlignment="center"
+            android:layout_height="31dp"
+            android:id="@+id/tv_dogName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_dog" android:layout_marginTop="24dp"
+            app:layout_constraintHorizontal_bias="0.497"/>
+    <TextView
+            android:text="Jenis"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:layout_width="101dp"
+            android:layout_height="22dp"
+            android:id="@+id/tv_dogType"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dogName" android:layout_marginTop="20dp"/>
+    <TextView
+            android:text="Desc..."
+            android:layout_width="304dp"
+            android:layout_height="137dp"
+            android:id="@+id/tv_dogDesc"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dogType"
+            android:layout_marginTop="20dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.495"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
