@@ -30,7 +30,7 @@ class ActivityDetailDog : AppCompatActivity() {
 
         binding.tvDogName.text = intent.getStringExtra(EXTRA_NAME)
         binding.tvDogDesc.text = intent.getStringExtra(EXTRA_DESC)
-        binding.tvDogType.text=intent.getStringExtra(EXTRA_JENIS)
+        binding.tvDogType.text = intent.getStringExtra(EXTRA_JENIS)
 
 
     }

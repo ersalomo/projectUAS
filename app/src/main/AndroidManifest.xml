@@ -10,6 +10,25 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.ProjectUAS">
         <activity
+                android:name=".ui.user.ActivityListMakananDog"
+                android:exported="true"/>
+        <activity
+                android:name=".ui.user.ActivityListMainanDog"
+                android:exported="true"/>
+        <activity
+                android:name=".ui.user.ActivityMenuUser"
+                android:exported="true"/>
+        <activity
+                android:name=".ui.admin.ActivityMakananAnjing"
+                android:exported="true"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity
+                android:name=".ui.admin.ActivityMainanDog"
+                android:exported="true"/>
+        <activity
+                android:name=".ui.admin.HomeMenuActivity"
+                android:exported="true"/>
+        <activity
                 android:name=".ui.detail.ActivityDetailDog"
                 android:exported="true"/>
         <activity

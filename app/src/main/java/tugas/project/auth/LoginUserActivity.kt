@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import tugas.project.R
 import tugas.project.databinding.ActivityLoginUserBinding
+import tugas.project.ui.user.ActivityMenuUser
 import tugas.project.ui.user.HomeUser
 
 class LoginUserActivity : AppCompatActivity() {
@@ -60,7 +61,7 @@ class LoginUserActivity : AppCompatActivity() {
         auntentifikasi.signInWithEmailAndPassword(email,password)
             .addOnCompleteListener(this){
                 if(it.isSuccessful){
-                    Intent(this,HomeUser::class.java).also {
+                    Intent(this,ActivityMenuUser::class.java).also {
                             intent -> intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
                     }

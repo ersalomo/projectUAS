@@ -38,7 +38,7 @@ class HomeUser:AppCompatActivity() {
                 if (snapshot.exists()){
                     listDogs.clear()
                     for (h in snapshot.children){
-                        val anjing:Anjing? = h.getValue(Anjing::class.java)
+                        val anjing: Anjing? = h.getValue(Anjing::class.java)
                         if (anjing != null){
                             listDogs.add(anjing)
                         }
@@ -74,6 +74,9 @@ class HomeUser:AppCompatActivity() {
                 startActivity(it)
             }
         }
+        binding.bBackHome.setOnClickListener {
+            startActivity(Intent(this@HomeUser,ActivityMenuUser::class.java))
+        }
 
     }
     private fun showDetail(anjing: Anjing){
@@ -84,7 +87,6 @@ class HomeUser:AppCompatActivity() {
                 intent.putExtra(ActivityDetailDog.EXTRA_JENIS,ajg.jenis)
                 intent.putExtra(ActivityDetailDog.EXTRA_DESC,ajg.desc)
                 startActivity(intent)
-
 
     }
 }
