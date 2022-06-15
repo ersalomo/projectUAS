@@ -9,5 +9,9 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_home_user">HomeUser</string>
     <string name="tambah_data">Tambah Data</string>
+    <string name="listdogs">List Dogs</string>
+    <string name="listMainan">List Makanan</string>
+    <string name="listMakanan">List Mainan</string>
+    <string name="about_apps">about apps</string>
 
 </resources>

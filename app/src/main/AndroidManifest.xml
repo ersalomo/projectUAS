@@ -10,6 +10,12 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.ProjectUAS">
         <activity
+                android:name=".ui.detail.DetailListType"
+                android:exported="true"/>
+        <activity
+                android:name=".ui.admin.TambahTypeDog"
+                android:exported="true"/>
+        <activity
                 android:name=".ui.user.ActivityListMakananDog"
                 android:exported="true"/>
         <activity

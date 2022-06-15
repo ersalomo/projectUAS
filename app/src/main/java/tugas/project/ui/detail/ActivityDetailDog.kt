@@ -10,9 +10,7 @@ import tugas.project.model.Anjing
 
 class ActivityDetailDog : AppCompatActivity() {
     private lateinit var binding:ActivityDetailDogBinding
-
     companion object{
-//        const val EXTRA_AJG = "EXTRA_AJG"
         const val EXTRA_IMAGE="extra_image"
         const val EXTRA_NAME = "extra_name"
         const val EXTRA_JENIS ="extra_jenis"
@@ -27,7 +25,6 @@ class ActivityDetailDog : AppCompatActivity() {
             .load(intent.getStringExtra(EXTRA_IMAGE))
             .circleCrop()
             .into(binding.ivDog)
-
         binding.tvDogName.text = intent.getStringExtra(EXTRA_NAME)
         binding.tvDogDesc.text = intent.getStringExtra(EXTRA_DESC)
         binding.tvDogType.text = intent.getStringExtra(EXTRA_JENIS)

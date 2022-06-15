@@ -10,18 +10,14 @@ import tugas.project.model.Anjing
 
 class AdapterDog(private val listDogs:ArrayList<Anjing>):RecyclerView.Adapter<AdapterDog.DogViewHolder>() {
     private lateinit var onCLickedItem: OnCLickedItem
-
     fun setOnItemListener(onCLickedItem: OnCLickedItem){
         this.onCLickedItem = onCLickedItem
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogViewHolder {
         val view = ItemDogsBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return DogViewHolder((view))
     }
-
     override fun getItemCount(): Int = listDogs.size
-
     override fun onBindViewHolder(holder: DogViewHolder, position: Int) {
     holder.bind(listDogs[position])
         holder.binding.root.setOnClickListener {

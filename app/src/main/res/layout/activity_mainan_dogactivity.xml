@@ -34,15 +34,15 @@
 
     <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="393dp"
-            android:layout_height="75dp"
+            android:layout_width="407dp"
+            android:layout_height="73dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-            android:layout_marginTop="4dp" app:layout_constraintHorizontal_bias="0.058"
+            android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="1.0"
             android:layout_marginStart="5dp" android:id="@+id/textInputLayout3">
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_marginHorizontal="10dp"
-                android:layout_width="374dp"
+                android:layout_width="369dp"
                 android:id="@+id/et_url_Mainan"
                 android:inputType="text"
                 android:padding="20dp"
@@ -50,7 +50,7 @@
                 android:hint="image url"
                 android:maxLines="1"
                 android:layout_marginTop="5dp"
-                android:layout_height="68dp"
+                android:layout_height="wrap_content"
                 android:minHeight="48dp"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.button.MaterialButton

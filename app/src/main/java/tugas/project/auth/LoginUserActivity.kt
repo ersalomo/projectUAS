@@ -28,7 +28,6 @@ class LoginUserActivity : AppCompatActivity() {
         editPassword = findViewById(R.id.etPassword)
         btnLogin = findViewById(R.id.bLogin)
         btnRegister = findViewById(R.id.bRegister)
-
         btnLogin.setOnClickListener {
             val email = editEmail.text.toString().trim()
             val password = editPassword.text.toString().trim()
@@ -55,19 +54,17 @@ class LoginUserActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
-
     }
     private fun loginUser(email:String,password:String){
         auntentifikasi.signInWithEmailAndPassword(email,password)
             .addOnCompleteListener(this){
                 if(it.isSuccessful){
-                    Intent(this,ActivityMenuUser::class.java).also {
-                            intent -> intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    Intent(this,ActivityMenuUser::class.java).also { intent ->
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
                     }
                 }else{
                     Toast.makeText(this,"${it.exception?.message}", Toast.LENGTH_LONG).show()
-
                 }
             }
     }

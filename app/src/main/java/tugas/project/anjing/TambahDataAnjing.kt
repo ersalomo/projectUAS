@@ -24,18 +24,16 @@ class TambahDataAnjing:AppCompatActivity() {
         setContentView(binding.root)
 
         ref = FirebaseDatabase.getInstance().getReference("dogs")
-
         binding.bTambahData.setOnClickListener {
-        saveData()
+            createData()
             clearColom()
         }
     }
-    private fun saveData(){
+    private fun createData(){
         val nama : String = binding.edNama.text.toString().trim()
         val jenis : String = binding.edJenis.text.toString().trim()
         val desc : String = binding.edDesc.text.toString().trim()
         val image:String? = binding.uriImage.text.toString().trim()
-
         if(nama.isEmpty()){
             binding.edNama.error = "nama is required"
             return
@@ -47,10 +45,8 @@ class TambahDataAnjing:AppCompatActivity() {
         if(desc.isEmpty()){
             binding.edDesc.error = "Desc is required"
         }
-
         val dogId = ref.push().key
         val dog = Anjing(dogId!!,nama,jenis,desc,image)
-
         if (dogId !=null){
             ref.child(dogId).setValue(dog).addOnCompleteListener{
                 Toast.makeText(applicationContext,"Data Berhasil Ditambah", Toast.LENGTH_SHORT).show()

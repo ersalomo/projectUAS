@@ -10,8 +10,9 @@
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_detail_dog.xml" value="0.33" />
+        <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_detail_list_type.xml" value="0.1" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_home_menu.xml" value="0.1" />
-        <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_home_user.xml" value="0.33" />
+        <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_home_user.xml" value="0.41656942823803966" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_list_mainan_dog.xml" value="0.18" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_list_makanan_dog.xml" value="0.21" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_login.xml" value="0.1859375" />
@@ -21,10 +22,11 @@
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_main_activityccc.xml" value="0.22" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_mainan_dog.xml" value="0.1859375" />
-        <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_mainan_dogactivity.xml" value="0.22" />
+        <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_mainan_dogactivity.xml" value="0.33" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_makanan_anjing.xml" value="0.25" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_menu_user.xml" value="0.25" />
-        <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_tambah_data.xml" value="0.25" />
+        <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_tambah_data.xml" value="0.1" />
+        <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_tambah_type_dog.xml" value="0.22" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/activity_user_register.xml" value="0.25" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/edit_this_dog.xml" value="0.33" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
@@ -34,6 +36,7 @@
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/itemlist_dogs_for_user.xml" value="0.25" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/list_mainan.xml" value="0.5" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/list_makanan.xml" value="0.33" />
+        <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/layout/list_type_of_dogs.xml" value="0.1" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/Users/acer/IdeaProjects/projectUAS/app/src/main/res/menu/bottom_navigation.xml" value="0.15" />
       </map>
