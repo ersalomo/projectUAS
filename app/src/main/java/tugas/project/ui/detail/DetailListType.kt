@@ -38,11 +38,7 @@ class DetailListType : AppCompatActivity() {
                         rvlistItemType.layoutManager = LinearLayoutManager(this@DetailListType)
                         rvlistItemType.setHasFixedSize(true)
                         rvlistItemType.adapter = adapter
-
-
                     }
-
-
                 }
             }
             override fun onCancelled(error: DatabaseError) {

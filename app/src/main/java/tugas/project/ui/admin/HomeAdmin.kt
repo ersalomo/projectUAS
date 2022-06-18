@@ -9,15 +9,12 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import de.hdodenhof.circleimageview.CircleImageView
 import tugas.project.R
 import tugas.project.anjing.AdapterDog
 import tugas.project.anjing.TambahDataAnjing
-import tugas.project.auth.LoginUserActivity
 import tugas.project.databinding.ActivityMainActivitycccBinding
 import tugas.project.model.Anjing
 
