@@ -10,6 +10,10 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.ProjectUAS">
         <activity
+                android:name=".ui.AboutActivity"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                android:exported="true"/>
+        <activity
                 android:name=".ui.detail.DetailListType"
                 android:exported="true"/>
         <activity
@@ -27,20 +31,22 @@
         <activity
                 android:name=".ui.admin.ActivityMakananAnjing"
                 android:exported="true"
-                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+                android:label="Tambah Makanan"/>
         <activity
                 android:name=".ui.admin.ActivityMainanDog"
-                android:exported="true"/>
+                android:exported="true"
+                android:label="List Mainan"/>
         <activity
                 android:name=".ui.admin.HomeMenuActivity"
-                android:exported="true"/>
+                android:exported="true"
+                android:label="Home Menu Admin"/>
         <activity
                 android:name=".ui.detail.ActivityDetailDog"
                 android:exported="true"/>
         <activity
                 android:name=".ui.admin.HomeAdmin"
                 android:exported="true"
-                android:label="Detail"/>
+                android:label="List doggy"/>
         <activity
                 android:name=".ui.user.HomeUser"
                 android:exported="true"/>
@@ -49,13 +55,16 @@
                 android:exported="true"/>
         <activity
                 android:name=".anjing.TambahDataAnjing"
-                android:exported="true"/>
+                android:exported="true"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
         <activity
                 android:name=".auth.LoginUserActivity"
-                android:exported="true"/>
+                android:exported="true"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
         <activity
                 android:name=".auth.LoginAdminActivity"
-                android:exported="true"/>
+                android:exported="true"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
         <activity
                 android:name=".MainActivity"
                 android:exported="true">

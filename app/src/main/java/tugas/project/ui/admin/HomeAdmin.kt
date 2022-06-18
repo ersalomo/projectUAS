@@ -16,11 +16,13 @@ import tugas.project.R
 import tugas.project.anjing.AdapterDog
 import tugas.project.anjing.TambahDataAnjing
 import tugas.project.databinding.ActivityMainActivitycccBinding
+
 import tugas.project.model.Anjing
+import tugas.project.ui.detail.DetailListType
 
 
 class HomeAdmin: AppCompatActivity() {
-    private lateinit var binding:ActivityMainActivitycccBinding
+    private lateinit var binding: ActivityMainActivitycccBinding
     private lateinit var ref : DatabaseReference
     private var listDogs = ArrayList<Anjing>()
     private lateinit var otentikasi: FirebaseAuth
@@ -46,13 +48,19 @@ class HomeAdmin: AppCompatActivity() {
 
                     //getDetail
                     adapterDog.setOnItemListener(object :AdapterDog.OnCLickedItem{
+                        //show details
                         override fun onClickedItem(anjing: Anjing) {
-                            Toast.makeText(this@HomeAdmin,"You cliked type of ${anjing.jenis}",Toast.LENGTH_LONG).show()
-                            MoveActWithData(anjing)
+                                Toast.makeText(applicationContext,anjing.jenis,Toast.LENGTH_LONG).show()
+                                moveActWithData(anjing.id)
                         }
                         override fun onClickToEdit(anjing: Anjing) {
                             Toast.makeText(this@HomeAdmin,"You wanna edit ${anjing.nama}",Toast.LENGTH_LONG).show()
                             showEditDailog(anjing)
+                        }
+
+                        override fun onClickedToAddTipe(anjing: Anjing) {
+                            Toast.makeText(this@HomeAdmin,"You cliked type of ${anjing.jenis}",Toast.LENGTH_LONG).show()
+                          addData(anjing)
                         }
                     })
                 }
@@ -131,7 +139,12 @@ class HomeAdmin: AppCompatActivity() {
         alert.show()
     }
 
-    private fun MoveActWithData(anjing: Anjing){
+    private fun moveActWithData(idDog : String){
+            val intent = Intent(this,DetailListType::class.java)
+                intent.putExtra(DetailListType.ID,idDog)
+                startActivity(intent)
+    }
+    private fun addData(anjing: Anjing){
         val intent = Intent(this@HomeAdmin,TambahTypeDog::class.java)
         intent.putExtra(TambahTypeDog.EXTRA_ID,anjing.id)
         intent.putExtra(TambahTypeDog.EXTRA_JENIS, anjing.jenis)

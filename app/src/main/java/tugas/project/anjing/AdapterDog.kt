@@ -26,13 +26,16 @@ class AdapterDog(private val listDogs:ArrayList<Anjing>):RecyclerView.Adapter<Ad
         holder.binding.bEdit.setOnClickListener {
             onCLickedItem.onClickToEdit(listDogs[position])
         }
+        holder.binding.bTambahJns.setOnClickListener {
+                onCLickedItem.onClickedToAddTipe(listDogs[position])
+        }
     }
    inner class DogViewHolder(val binding:ItemDogsBinding):RecyclerView.ViewHolder(binding.root){
             fun bind(anjing: Anjing){
                 binding.apply {
                     tvtNamaDog.text =anjing.nama
-                    tvJenisDog.text ="Type : ${anjing.jenis}"
-                    tvdescDog.text = "Desc : ${anjing.desc}"
+                    tvJenisDog.text ="Jenis ${anjing.jenis}"
+                    tvdescDog.text = anjing.desc
 
                 }
                 Glide.with(binding.root)
@@ -47,5 +50,6 @@ class AdapterDog(private val listDogs:ArrayList<Anjing>):RecyclerView.Adapter<Ad
     interface OnCLickedItem{
         fun onClickedItem(anjing: Anjing)
         fun onClickToEdit(anjing: Anjing)
+        fun onClickedToAddTipe(anjing: Anjing)
     }
 }

@@ -13,5 +13,10 @@
     <string name="listMainan">List Makanan</string>
     <string name="listMakanan">List Mainan</string>
     <string name="about_apps">about apps</string>
+    <string name="text_abouts">
+        Aplikasi ini dibuat untuk para pecinta anjing, tujuan aplikasi ini
+        untuk mengenalkan jenis-jenis anjing, aplikasi ini masih adalam tahap pengembangan
+        mohon maaf jika banyak kekurangan.
+    </string>
 
 </resources>

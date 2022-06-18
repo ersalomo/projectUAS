@@ -3,7 +3,6 @@ package tugas.project.ui.detail
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
 import tugas.project.anjing.ListTypeDogAdapter
 import tugas.project.databinding.ActivityDetailListTypeBinding
@@ -14,12 +13,18 @@ class DetailListType : AppCompatActivity() {
     private  var listTypeDogs = ArrayList<DogListType>()
     private lateinit var binding:ActivityDetailListTypeBinding
 
+    companion object{
+        const val ID = "id"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityDetailListTypeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val foreignKey = intent.getStringExtra(ID)
 
-        ref = FirebaseDatabase.getInstance().getReference("tb_typeDog")
+        ref = FirebaseDatabase.getInstance().getReference("tb_typeDog").child(foreignKey!!)
 
         ref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {

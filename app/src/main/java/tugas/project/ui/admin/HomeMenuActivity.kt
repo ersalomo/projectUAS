@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import tugas.project.databinding.ActivityHomeMenuBinding
+import tugas.project.ui.AboutActivity
 
 class HomeMenuActivity : AppCompatActivity() {
     private lateinit var binding : ActivityHomeMenuBinding
@@ -24,6 +25,11 @@ class HomeMenuActivity : AppCompatActivity() {
             Toast.makeText(applicationContext,"Makanan Anjing",Toast.LENGTH_LONG).show()
             startActivity(Intent(this,ActivityMakananAnjing::class.java))
         }
+        binding.ivAbout.setOnClickListener {
+            Toast.makeText(applicationContext,"About this apps",Toast.LENGTH_LONG).show()
+            startActivity(Intent(this,AboutActivity::class.java))
+        }
+
 
     }
 }

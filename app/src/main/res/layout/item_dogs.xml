@@ -31,26 +31,26 @@
                 android:layout_width="187dp"
                 android:layout_height="27dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="4dp"
-                app:layout_constraintStart_toEndOf="@+id/imgDog" android:layout_marginStart="4dp"/>
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/imgDog" android:layout_marginStart="8dp"/>
         <TextView
                 android:textStyle="normal"
                 android:id="@+id/tvJenisDog"
                 android:text="jenis"
-                android:layout_width="249dp"
-                android:layout_height="28dp"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:layout_constraintTop_toBottomOf="@+id/tvtNamaDog"
-                android:layout_marginTop="4dp" app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imgDog" app:layout_constraintHorizontal_bias="0.235"/>
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@+id/imgDog" android:layout_marginStart="8dp"/>
         <TextView
                 android:textStyle="normal"
                 android:id="@+id/tvdescDog"
                 android:text="desc"
-                android:layout_width="257dp"
-                android:layout_height="50dp"
+                android:layout_width="243dp"
+                android:layout_height="71dp"
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -58,24 +58,35 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline3"
                 app:layout_constraintVertical_bias="0.0"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.384" app:layout_constraintStart_toEndOf="@+id/imgDog"/>
+                app:layout_constraintHorizontal_bias="0.285" app:layout_constraintStart_toEndOf="@+id/imgDog"/>
         <com.google.android.material.button.MaterialButton
                 android:layout_width="56dp"
                 android:text="edit"
                 android:id="@+id/bEdit"
-                android:backgroundTint="@color/divider"
+                android:backgroundTint="@color/primary_light"
                 android:textSize="6sp"
                 android:textColor="@color/black"
                 android:layout_height="32dp"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/tvtNamaDog"
-                android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintHorizontal_bias="1.0"/>
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="69dp"
+                android:text="tambah"
+                android:id="@+id/bTambahJns"
+                android:backgroundTint="@color/primary_light"
+                android:textSize="6sp"
+                android:textColor="@color/black"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/bEdit"
+                app:layout_constraintStart_toEndOf="@+id/tvJenisDog" android:layout_marginTop="4dp"
+                app:layout_constraintHorizontal_bias="1.0"/>
         <androidx.constraintlayout.widget.Guideline
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/guideline3"
-                app:layout_constraintGuide_begin="123dp"
+                app:layout_constraintGuide_begin="111dp"
                 android:orientation="horizontal"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

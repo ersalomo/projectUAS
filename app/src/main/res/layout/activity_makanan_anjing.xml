@@ -63,8 +63,8 @@
     </com.google.android.material.textfield.TextInputLayout>
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_listMkn"
-            android:layout_width="413dp"
-            android:layout_height="488dp"
+            android:layout_width="399dp"
+            android:layout_height="467dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"

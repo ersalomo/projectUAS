@@ -23,7 +23,7 @@ class ListTypeDogAdapter(private val listTypeDogs:ArrayList<DogListType>):Recycl
 
         fun bind(anjing: DogListType){
        binding.apply {
-           tvTYpeDog.text = anjing.nama
+           tvtypeDog.text = anjing.nama
             }
         }
 

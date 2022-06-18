@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/primary_dark"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     <TextView
             android:text="@string/tambah_data"
+            android:textColor="@color/white"
             android:textSize="23sp"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -15,6 +18,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="76dp"/>
     <androidx.cardview.widget.CardView
+            app:cardCornerRadius="25dp"
             android:layout_width="365dp"
             android:layout_height="442dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +71,7 @@
                     android:id="@+id/bTambahData"
                     app:cornerRadius="20dp"
                     android:layout_width="292dp"
-                    android:backgroundTint="@color/teal_700"
+                    android:backgroundTint="@color/primary_dark"
                     android:layout_height="59dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

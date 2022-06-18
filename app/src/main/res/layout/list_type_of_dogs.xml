@@ -20,7 +20,7 @@
                 app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
         <TextView
                 android:textStyle="bold"
-                android:id="@+id/tvTYpeDog"
+                android:id="@+id/tvtypeDog"
                 android:text="typenamedog"
                 android:textSize="15sp"
                 android:layout_width="142dp"

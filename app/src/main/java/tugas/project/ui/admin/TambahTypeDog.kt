@@ -16,9 +16,8 @@ import tugas.project.model.DogListType
 import tugas.project.ui.detail.DetailListType
 
 class TambahTypeDog : AppCompatActivity() {
-//    private lateinit var rv_typeDogs: RecyclerView
+
     private lateinit var ref: DatabaseReference
-//    private  var listTypeDogs = ArrayList<Anjing>()
 
     companion object{
         const val EXTRA_ID = "extra_id"
@@ -43,7 +42,7 @@ class TambahTypeDog : AppCompatActivity() {
             bAddType.setOnClickListener {
                 saveDogType()
                 clearColomn()
-                pindah()
+                pindah(id!!)
             }
             Glide.with(binding.root)
                 .load(image)
@@ -73,7 +72,9 @@ class TambahTypeDog : AppCompatActivity() {
     private fun clearColomn(){
         binding.etNameDoggy.setText("")
     }
-    private fun pindah(){
-        startActivity(Intent(this,DetailListType::class.java))
+    private fun pindah(id:String){
+        val intent = Intent(this,DetailListType::class.java)
+        intent.putExtra(DetailListType.ID,id)
+        startActivity(intent)
     }
 }

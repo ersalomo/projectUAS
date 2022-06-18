@@ -12,7 +12,7 @@ class ListMKNAdapter(private var listMakan:ArrayList<Makanan>):RecyclerView.Adap
         fun bind(makanan: Makanan){
             binding.apply {
                 tvNamaMKN.text = makanan.nama
-                tvJenisMKN.text = "Jenis Makan ${makanan.jenis}"
+                tvJenisMKN.text = "${makanan.jenis}"
                 tvBeratMKN.text = "Berat ${makanan.berat}"
             }
 
